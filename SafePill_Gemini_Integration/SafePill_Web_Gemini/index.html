@@ -1,0 +1,143 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="SafePill: concepto de organizador inteligente de medicamentos y asistente digital.">
+  <meta name="theme-color" content="#0b6f78">
+  <title>SafePill | Tu salud, nuestra prioridad</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <nav class="nav container" aria-label="Navegación principal">
+      <a class="brand" href="#inicio"><span class="brand-mark">♡</span><span>Safe<span>Pill</span><small>Tu salud, nuestra prioridad</small></span></a>
+      <button class="menu-toggle" id="menuToggle" aria-label="Abrir menú" aria-expanded="false">☰</button>
+      <div class="nav-links" id="navLinks">
+        <a href="#inicio">Inicio</a><a href="#producto">Producto</a><a href="#como-funciona">Cómo funciona</a><a href="#asistente">Asistente IA</a><a href="#tienda">Comprar</a>
+      </div>
+      <button class="button button-outline nav-contact" data-open-contact>✉ Solicitar información</button>
+      <button class="cart-nav" id="openCart" aria-label="Abrir carrito">🛒 <span id="cartCount">0</span></button>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero" id="inicio">
+      <div class="hero-bg"></div>
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <span class="eyebrow"><i></i> CUIDADO + TECNOLOGÍA</span>
+          <h1>Cuida tu salud con la ayuda de la <em>IA.</em></h1>
+          <p>SafePill es una propuesta de organizador inteligente de medicamentos que busca ayudarte a mantener una rutina más clara y acompañarte con un asistente virtual.</p>
+          <div class="hero-actions"><a class="button button-primary" href="#tienda">Explorar pastilleros <b>→</b></a><a class="button button-ghost" href="#como-funciona">Cómo funciona</a></div>
+          <div class="hero-trust"><span>✓ Diseño intuitivo</span><span>✓ Información clara</span><span>✓ Apoyo digital</span></div>
+        </div>
+        <div class="hero-image-wrap">
+          <img src="assets/safepill-hero.jpg" alt="Concepto visual de un pastillero inteligente SafePill con pantalla y compartimentos" class="hero-image">
+          <div class="image-caption">Diseño conceptual SafePill</div>
+        </div>
+      </div>
+    </section>
+
+    <section class="feature-strip container" aria-label="Características propuestas">
+      <div><span class="feature-icon">◷</span><b>Recordatorios</b><small>Rutinas organizadas</small></div>
+      <div><span class="feature-icon">♧</span><b>Fácil de entender</b><small>Experiencia intuitiva</small></div>
+      <div><span class="feature-icon">✦</span><b>Asistente IA</b><small>Respuestas sobre SafePill</small></div>
+      <div><span class="feature-icon">♡</span><b>Apoyo familiar</b><small>Enfoque en cuidadores</small></div>
+    </section>
+
+    <section class="section container about-grid" id="producto">
+      <div class="about-image"><img src="assets/safepill-pro.jpg" alt="Vista conceptual de un modelo SafePill con compartimentos"></div>
+      <div>
+        <span class="eyebrow">01 / CONOCE EL PROYECTO</span>
+        <h2>¿Qué es <em>SafePill?</em></h2>
+        <p>SafePill nace como una propuesta para hacer más sencilla la organización de las rutinas de medicamentos, especialmente para personas que administran varios medicamentos o reciben apoyo de familiares.</p>
+        <p>La idea combina un organizador físico conceptual con una plataforma web que explica el proyecto y ayuda a resolver preguntas frecuentes.</p>
+        <a class="text-link" href="#como-funciona">Conoce la propuesta <b>→</b></a>
+      </div>
+    </section>
+
+    <section class="section how-section" id="como-funciona">
+      <div class="container">
+        <div class="section-heading centered"><span class="eyebrow">02 / PASO A PASO</span><h2>Una rutina más <em>organizada.</em></h2><p>Así imaginamos la experiencia SafePill. Las funciones del dispositivo todavía son parte del desarrollo del concepto.</p></div>
+        <div class="steps">
+          <article><span>01</span><div class="step-icon">☷</div><h3>Organiza</h3><p>Consulta y organiza la información de tu rutina siguiendo las indicaciones de tu profesional de salud.</p></article>
+          <article><span>02</span><div class="step-icon">◷</div><h3>Recuerda</h3><p>El concepto contempla recordatorios vinculados a horarios previamente configurados.</p></article>
+          <article><span>03</span><div class="step-icon">♡</div><h3>Infórmate</h3><p>El sitio y su asistente explican el producto, sus opciones y cómo navegar la plataforma.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section container assistant-section" id="asistente">
+      <div class="assistant-intro">
+        <span class="eyebrow">03 / ASISTENCIA DIGITAL</span>
+        <h2>Pregunta. Explora. <em>Conoce SafePill.</em></h2>
+        <p>El asistente puede orientar al visitante sobre el proyecto, los modelos de demostración, el carrito y el uso del sitio. Safi utiliza Gemini para responder preguntas sobre SafePill mediante una conexión segura al servidor.</p>
+        <div class="assistant-topics">
+          <span>Producto</span><span>Modelos</span><span>Compra</span><span>Preguntas frecuentes</span><span>Seguridad</span>
+        </div>
+        <div class="safety-callout"><b>Importante:</b> el asistente no da diagnósticos, no prescribe medicamentos y no recomienda modificar dosis ni tratamientos.</div>
+      </div>
+      <div class="chat-card">
+        <div class="chat-head"><div class="bot-avatar">✦</div><div><b>Asistente SafePill</b><small><i></i> Disponible para ayudarte</small></div><button id="clearChat" title="Reiniciar conversación">↻</button></div>
+        <div class="chat-messages" id="chatMessages" aria-live="polite">
+          <div class="chat-message bot">¡Hola! Soy el asistente de SafePill 💚 Puedo explicarte nuestro concepto, comparar modelos, orientarte con el carrito y responder preguntas frecuentes. ¿Qué te gustaría saber?</div>
+        </div>
+        <div class="suggestion-area" id="suggestions">
+          <button data-question="¿Qué es SafePill?">¿Qué es SafePill?</button>
+          <button data-question="¿Qué diferencia hay entre los modelos?">Comparar modelos</button>
+          <button data-question="¿Cómo agrego un producto al carrito?">Ayuda para comprar</button>
+          <button data-question="¿SafePill ya está a la venta?">Disponibilidad</button>
+          <button data-question="¿Puedo cambiar mis dosis desde SafePill?">Seguridad y salud</button>
+          <button data-question="¿Cómo contacto al equipo?">Contactar al equipo</button>
+        </div>
+        <form class="chat-form" id="chatForm"><input id="chatInput" type="text" placeholder="Escribe tu pregunta..." maxlength="400" autocomplete="off" aria-label="Escribe tu pregunta"><button type="submit" aria-label="Enviar">➤</button></form>
+        <p class="chat-footnote">Asistente con Gemini · No compartas datos personales ni información médica.</p>
+      </div>
+    </section>
+
+    <section class="section shop-section" id="tienda">
+      <div class="container">
+        <div class="shop-heading"><div><span class="eyebrow">04 / TIENDA DEMOSTRATIVA</span><h2>Elige tu <em>SafePill.</em></h2><p>Selecciona el modelo que quieras explorar y agrégalo al carrito.</p></div><button class="button button-outline" id="shopCartButton">🛒 Ver carrito (<span id="shopCount">0</span>)</button></div>
+        <div class="product-grid">
+          <article class="product-card">
+            <div class="product-image"><img src="assets/safepill-mini.jpg" alt="Concepto del modelo SafePill Mini"></div>
+            <span class="product-label">COMPACTO</span><h3>SafePill Mini</h3><p>Diseño compacto para una rutina sencilla.</p><div class="price">$499 <small>MXN</small></div><button class="button button-primary add-cart" data-id="mini">Agregar al carrito <b>＋</b></button>
+          </article>
+          <article class="product-card featured-product">
+            <div class="popular-tag">MÁS POPULAR</div><div class="product-image"><img src="assets/safepill-pro.jpg" alt="Concepto del modelo SafePill Pro"></div>
+            <span class="product-label">EQUILIBRADO</span><h3>SafePill Pro</h3><p>Mayor capacidad y pantalla conceptual.</p><div class="price">$799 <small>MXN</small></div><button class="button button-primary add-cart" data-id="pro">Agregar al carrito <b>＋</b></button>
+          </article>
+          <article class="product-card">
+            <div class="product-image"><img src="assets/safepill-premium.jpg" alt="Concepto del modelo SafePill Premium"></div>
+            <span class="product-label">AVANZADO</span><h3>SafePill Premium</h3><p>Diseño amplio para explorar funciones futuras.</p><div class="price">$1,199 <small>MXN</small></div><button class="button button-primary add-cart" data-id="premium">Agregar al carrito <b>＋</b></button>
+          </article>
+        </div>
+        <p class="demo-disclaimer">Precios ilustrativos creados para la demostración del proyecto. No representan precios comerciales ni confirman disponibilidad, fabricación o venta real. Las imágenes son representaciones conceptuales generadas con IA.</p>
+      </div>
+    </section>
+
+    <section class="section container final-cta">
+      <div><span class="eyebrow">05 / ¿TIENES DUDAS?</span><h2>Estamos aquí para <em>ayudarte.</em></h2><p>Envíanos una consulta sobre el proyecto o sobre esta demostración.</p></div>
+      <button class="button button-primary" data-open-contact>Solicitar información <b>↗</b></button>
+    </section>
+  </main>
+
+  <footer class="footer"><div class="container footer-inner"><a class="brand footer-brand" href="#inicio"><span class="brand-mark">♡</span><span>Safe<span>Pill</span><small>Tu salud, nuestra prioridad</small></span></a><p>Proyecto estudiantil · InnovatiQ AI Fusion</p><span>© <span id="year"></span> SafePill. Concepto en desarrollo.</span></div></footer>
+
+  <!-- Cart drawer -->
+  <div class="overlay" id="cartOverlay" aria-hidden="true"><aside class="drawer" role="dialog" aria-modal="true" aria-labelledby="cartTitle"><div class="modal-head"><div><span class="eyebrow">TU SELECCIÓN</span><h2 id="cartTitle">Tu carrito</h2></div><button class="close-modal" data-close="cartOverlay" aria-label="Cerrar">×</button></div><div id="cartItems" class="cart-items"></div><div class="cart-bottom"><div class="subtotal"><span>Subtotal</span><b id="cartSubtotal">$0 MXN</b></div><p class="cart-note">En esta versión no se realizan cobros reales.</p><button class="button button-primary full-width" id="checkoutButton">Continuar con pedido de prueba →</button><button class="text-button" data-close="cartOverlay">Seguir explorando</button></div></aside></div>
+
+  <!-- Contact modal -->
+  <div class="overlay" id="contactOverlay" aria-hidden="true"><section class="modal" role="dialog" aria-modal="true" aria-labelledby="contactTitle"><div class="modal-head"><div><span class="eyebrow">CONTACTO</span><h2 id="contactTitle">Solicitar información</h2></div><button class="close-modal" data-close="contactOverlay" aria-label="Cerrar">×</button></div><p class="modal-description">Completa el mensaje y se abrirá tu aplicación de correo con la información preparada.</p><form id="contactForm" class="stack-form"><label>Nombre<input name="name" required placeholder="Tu nombre"></label><label>Correo electrónico<input name="email" type="email" required placeholder="tunombre@correo.com"></label><label>¿Sobre qué te gustaría saber?<select name="topic"><option>Información general de SafePill</option><option>Modelos y características</option><option>Proyecto y desarrollo</option><option>Compra demostrativa</option><option>Otra consulta</option></select></label><label>Mensaje<textarea name="message" rows="4" required placeholder="Escribe aquí tu pregunta..."></textarea></label><button class="button button-primary full-width" type="submit">Preparar correo ↗</button><p class="form-hint">No se envían datos a ningún servidor. Tu aplicación de correo se encargará del envío.</p></form></section></div>
+
+  <!-- Checkout modal -->
+  <div class="overlay" id="checkoutOverlay" aria-hidden="true"><section class="modal" role="dialog" aria-modal="true" aria-labelledby="checkoutTitle"><div class="modal-head"><div><span class="eyebrow">PEDIDO DE PRUEBA</span><h2 id="checkoutTitle">Datos de contacto</h2></div><button class="close-modal" data-close="checkoutOverlay" aria-label="Cerrar">×</button></div><div id="checkoutSummary" class="checkout-summary"></div><form id="checkoutForm" class="stack-form"><label>Nombre completo<input name="name" required placeholder="Tu nombre"></label><label>Correo electrónico<input name="email" type="email" required placeholder="tunombre@correo.com"></label><label>Ciudad / Estado<input name="location" required placeholder="Ej. San Luis Potosí, SLP"></label><button class="button button-primary full-width" type="submit">Generar resumen de pedido</button><p class="form-hint">Simulación escolar: no solicita datos bancarios, no procesa pagos ni confirma una compra real.</p></form></section></div>
+
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+  <script src="script.js"></script>
+</body>
+</html>
